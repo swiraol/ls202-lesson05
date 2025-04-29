@@ -10,18 +10,24 @@
     </style>
   </head>
   <body>
-    <form action="#" autocomplete="off" class="user-form">
-      <label for="name">First name</label>
-      <input type="text" name="first-name" id="first-name" placeholder="Enter your first name">
+      <form action="#" class="user-form" method="post">
+        <fieldset>
+          <legend>Form</legend>
+          <dl>
+            <dt><label for="name">First name</label></dt>
+            <dd><input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required></dd>
 
-      <label for="last-name">Last name</label>
-      <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
+            <dt><label for="last-name">Last name</label></dt>
+            <dd><input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required></dd>
 
-      <label for="email-address">Email address</label>
-      <input type="text" for="email-address" name="email-address" id="email-address" placeholder="Enter your email address">
+            <dt><label for="email-address">Email address</label></dt>
+            <dd><input type="email" for="email-address" name="email-address" id="email-address" placeholder="Enter your email address" autocomplete="off" autocorrect="off" autocapitalize="none"></dd>
 
-      <label for="phone-number">Phone number</label>
-      <input type="text" name="phone-number" id="phone-number" placeholder="Enter your phone number">
-    </form>
+            <dt><label for="phone-number">Phone number</label></dt>
+            <dd><input type="tel" name="phone-number" id="phone-number" placeholder="Enter your phone number" required></dd>
+          </dl>
+            <input type="submit" value="Send">
+          </fieldset>
+      </form>
   </body>
 </html>

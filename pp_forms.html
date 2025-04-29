@@ -24,7 +24,8 @@
             <dd><input type="email" for="email-address" name="email-address" id="email-address" placeholder="Enter your email address" autocomplete="off" autocorrect="off" autocapitalize="none"></dd>
 
             <dt><label for="phone-number">Phone number</label></dt>
-            <dd><input name="phone-number" id="phone-number"></dd>
+            <dd><input type="tel" name="phone-number" id="phone-number" placeholder="Ex. XXX-XXX-XXXX"></dd>
+
             <dt><label for="phone-type">Phone type</label></dt>
             <dd>
               <select name="phone-type" id="phone-type">
@@ -33,6 +34,9 @@
                 <option value="mobile">mobile</option>
               </select>
             </dd>
+
+            <dt><label for="message">Message</label></dt>
+            <dd><textarea name="message" id="message" row="6" cols="80"></textarea></dd>
           </dl>
             <input type="submit" value="Send">
           </fieldset>

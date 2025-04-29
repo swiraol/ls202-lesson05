@@ -24,7 +24,13 @@
             <dd><input type="email" for="email-address" name="email-address" id="email-address" placeholder="Enter your email address" autocomplete="off" autocorrect="off" autocapitalize="none"></dd>
 
             <dt><label for="phone-number">Phone number</label></dt>
-            <dd><input type="tel" name="phone-number" id="phone-number" placeholder="Enter your phone number" required></dd>
+            <dd>
+              <select name="phone-number" id="phone-number">
+                <option value="home" selected>home</option>
+                <option value="business">business</option>
+                <option value="mobile">mobile</option>
+              </select>
+            </dd>
           </dl>
             <input type="submit" value="Send">
           </fieldset>

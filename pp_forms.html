@@ -222,7 +222,42 @@
               </label>
             </li>
           </ul>
-          <button type="submit" value="Search">Search</button>
+          <button type="submit" value="Filter">Filter</button>
+        </fieldset>
+      </form>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Fourth form variation</legend>
+          <dl>
+            <dt><label for="category">Category</label></dt>
+              <dd>
+                <select name="category" id="category" size="6">
+                  <option value="core" selected>Core</option>
+                  <option value="plugins">Plugins and Libraries</option>
+                  <option value="conventions">Conventions</option>
+                  <option value="reviews">Reviews</option>
+                  <option value="opinion">Opinion</option>
+                  <option value="people">People</option>
+                </select>
+              </dd>
+          </dl>
+          <dl>
+            <dt><label for="tag">Tag</label></dt>
+            <dd>
+              <select name="tag" id="tag" size="7" multiple>
+                <option value="HTML" selected>HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Ruby">Ruby</option>
+                <option value="Rails">Rails</option>
+                <option value="Python">Python</option>
+                <option value="Django">Django</option>
+              </select>
+            </dd>
+        </dl>
+        <button type="submit" name="filter">Filter</button>
+        <button type="reset" name="reset">Reset all</button>
         </fieldset>
       </form>
   </body>
